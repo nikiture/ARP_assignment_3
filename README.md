@@ -128,7 +128,7 @@ This process communicates with the server/receiver process, sending the newly ge
 
 ## How to run and install it
 
-Once you downloaded the folder, first you need to create a folder named `build` inside of the directory in which you downloaded the files (or you can type in the command prompt `$ make start_build`).
+Once you downloaded the folder, first you need to have a folder named `build` inside of the `sender` and `receiver` folders containing the source code files, if it is not already present you need to manually add it (or you can type in the command prompt `$ make start_build`).
 once the `build` directory has been created, to compile the source code type in the command prompt:`$ make`
 This command is to be executed also if you decided to change something inside the source code (any of the .c files or the worldinfo.h file)
 Once that is done to start the simulation the two part must connect successfully. To achieve this first on the receiving part (`receiver` folder) go in the `build` folder and write in the command prompt
