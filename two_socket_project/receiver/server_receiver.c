@@ -298,6 +298,7 @@ int main (int argc, char ** argv) {
                         exit (EXIT_FAILURE);
                     }
                     printf ("received socket respond for reset\n");
+                    
                 }
                 else if (IO_msg [0] == 'q') {
                     printf ("stop message\n");

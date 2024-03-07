@@ -239,6 +239,10 @@ int main (int argc, char ** argv) {
                     exit (EXIT_FAILURE);
                 }
             }
+            if (write (sock_fd, tmp_msg, strlen (tmp_msg) + 1) < 0) {
+                perror ("reset echo");
+            }
+            usleep (400);
             if (tmp_msg [0] == 'S') {
                 exit (EXIT_SUCCESS);
             }
